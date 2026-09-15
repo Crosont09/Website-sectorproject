@@ -589,8 +589,8 @@ a:hover {
   border: 2px solid var(--aqua);
   border-radius: var(--radius-klein);
   background: var(--schuim);
-  padding: 20px;
-  margin-bottom: 22px;
+  padding: 26px;
+  margin-bottom: 26px;
 }
 
 .groeps-tag {
@@ -625,20 +625,98 @@ a:hover {
   margin-top: 14px;
 }
 
+/* Tabellen in groepsproduct */
+.groepsproduct table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 20px;
+  font-size: 0.92rem;
+}
+
+.groepsproduct th {
+  text-align: left;
+  padding: 10px 14px;
+  background: var(--blauw-900);
+  color: var(--wit);
+  font-weight: 700;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.groepsproduct td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--scheiding);
+}
+
+.groepsproduct tbody tr:hover {
+  background: rgba(17, 179, 201, 0.06);
+}
+
+/* Sectiekopjes in groepsproduct */
+.groepsproduct h5 {
+  color: var(--blauw-700);
+  font-size: 0.95rem;
+  margin: 22px 0 4px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--aqua-light);
+}
+
+.groepsproduct h5:first-of-type {
+  margin-top: 10px;
+}
+
+/* Opsommingen in groepsproduct */
+.groepsproduct ol {
+  margin: 12px 0 20px;
+  padding-left: 22px;
+  counter-reset: afspraak;
+  list-style: none;
+}
+
+.groepsproduct ol li {
+  position: relative;
+  padding: 10px 14px 10px 40px;
+  margin-bottom: 8px;
+  background: var(--wit);
+  border: 1px solid var(--scheiding);
+  border-left: 4px solid var(--aqua);
+  border-radius: 0 var(--radius-klein) var(--radius-klein) 0;
+  font-size: 0.91rem;
+  line-height: 1.55;
+  counter-increment: afspraak;
+}
+
+.groepsproduct ol li::before {
+  content: counter(afspraak);
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--aqua);
+  color: var(--wit);
+  font-weight: 800;
+  font-size: 0.72rem;
+}
+
 .studenten-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
 }
 
 .studentkaart {
   border: 1px dashed var(--scheiding);
   border-radius: var(--radius-klein);
-  padding: 18px;
+  padding: 22px;
   background: var(--schuim-licht);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 14px;
 }
 
 .studentkaart > header {
@@ -662,6 +740,14 @@ a:hover {
 .studentkaart p {
   font-size: 0.94rem;
   color: var(--inkt);
+  line-height: 1.6;
+}
+
+.studentkaart p strong {
+  color: var(--blauw-700);
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .studentkaart .maakletwat {
@@ -850,6 +936,15 @@ a:hover {
   border-radius: 0 var(--radius-klein) var(--radius-klein) 0;
   font-style: italic;
   color: var(--blauw-700);
+}
+
+/* Sectie-rollen op profielpagina's */
+.sectie p strong {
+  color: var(--blauw-700);
+}
+
+.sectie p + p {
+  margin-top: 10px;
 }
 
 .fase-koppelingen {
