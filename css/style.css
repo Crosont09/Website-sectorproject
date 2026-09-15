@@ -773,25 +773,58 @@ a:hover {
   overflow: hidden;
 }
 
-.eisenblok > header {
+.eisenblok > summary {
   display: flex;
   align-items: center;
   gap: 14px;
   padding: 18px 28px;
   background: linear-gradient(90deg, var(--blauw-900), var(--blauw-700));
   color: var(--wit);
+  cursor: pointer;
+  list-style: none;
+  transition: background 0.2s ease;
 }
 
-.eisenblok > header h5 {
+.eisenblok > summary::-webkit-details-marker {
+  display: none;
+}
+
+.eisenblok > summary:hover {
+  background: linear-gradient(90deg, var(--blauw-700), var(--blauw-500));
+}
+
+.eisen-titel {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.eisen-naam {
   color: var(--wit);
+  font-weight: 700;
   font-size: 1.05rem;
   line-height: 1.25;
 }
 
-.eisenblok > header .kaart-label {
+.eisen-vak {
   color: var(--aqua-light);
   font-weight: 700;
   font-size: 0.8rem;
+}
+
+.eisen-pijl {
+  margin-left: auto;
+  flex: none;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid rgba(255, 255, 255, 0.9);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+  transform: rotate(45deg) translateY(-3px);
+  transition: transform 0.2s ease;
+}
+
+.eisenblok[open] .eisen-pijl {
+  transform: rotate(225deg) translateY(3px);
 }
 
 .eisen-inhoud {
