@@ -47,7 +47,22 @@
     el.textContent = new Date().getFullYear();
   });
 
-  /* 4. Subtiele in-scroll-animatie */
+  /* 4. Dark-mode wisselen */
+  var themaKnop = document.querySelector(".dark-toggle");
+  if (themaKnop) {
+    themaKnop.addEventListener("click", function () {
+      var nieuwThema =
+        document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+      document.documentElement.dataset.theme = nieuwThema;
+      try {
+        localStorage.setItem("thema", nieuwThema);
+      } catch (e) {
+        /* opslaan niet mogelijk (bv. privémodus) — geen probleem */
+      }
+    });
+  }
+
+  /* 5. Subtiele in-scroll-animatie */
   var revealElementen = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {
     var waarnemer = new IntersectionObserver(

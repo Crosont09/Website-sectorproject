@@ -152,6 +152,7 @@ a:hover {
   width: 44px;
   height: 44px;
   padding: 10px;
+  margin-left: auto;
   border: 1px solid var(--scheiding);
   border-radius: 10px;
   background: var(--wit);
@@ -177,6 +178,44 @@ a:hover {
 
 .nav-toggle.open span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Dark-mode knop */
+.dark-toggle {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  margin-left: 8px;
+  border: 1px solid var(--scheiding);
+  border-radius: 50%;
+  background: var(--wit);
+  color: var(--blauw-700);
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.dark-toggle:hover {
+  color: var(--blauw-900);
+  border-color: var(--aqua);
+  background: var(--schuim);
+}
+
+.dark-toggle svg {
+  display: block;
+}
+
+.dark-toggle .ico-zon {
+  display: none;
+}
+
+[data-theme="dark"] .dark-toggle .ico-maan {
+  display: none;
+}
+
+[data-theme="dark"] .dark-toggle .ico-zon {
+  display: block;
 }
 
 /* ==========================================================================
@@ -1349,4 +1388,66 @@ a:hover {
     gap: 2px;
     align-items: flex-start;
   }
+}
+
+/* ==========================================================================
+   Donkere modus
+   De blauwtinten worden lichter (zij dienen vooral als tekstkleur), maar de
+   elementen die ze als achtergrond gebruiken blijven donker (fixes hieronder).
+   ========================================================================== */
+
+[data-theme="dark"] {
+  --blauw-950: #04101d;
+  --blauw-900: #bcd6ec;
+  --blauw-700: #9cc0e0;
+  --blauw-500: #7fb4d8;
+  --aqua: #2fc4da;
+  --aqua-donker: #4fd4e8;
+  --aqua-light: #8fe8f2;
+  --schuim: #0d2035;
+  --schuim-licht: #081827;
+  --wit: #10263e;
+  --inkt: #dbe7f0;
+  --grijs: #9db2c2;
+  --scheiding: rgba(255, 255, 255, 0.14);
+  --markering: #5c4b0a;
+  --markering-tekst: #ffe9a3;
+  --schaduw: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+
+[data-theme="dark"] .site-header {
+  background: rgba(4, 16, 29, 0.92);
+}
+
+[data-theme="dark"] .hero {
+  background:
+    radial-gradient(circle at 85% 15%, rgba(127, 227, 239, 0.25), transparent 42%),
+    linear-gradient(160deg, #04101d 0%, #0b2a4a 55%, #143a63 100%);
+}
+
+[data-theme="dark"] .page-hero {
+  background:
+    radial-gradient(circle at 90% 10%, rgba(127, 227, 239, 0.25), transparent 45%),
+    linear-gradient(150deg, #04101d, #0b2a4a);
+}
+
+[data-theme="dark"] .onderdeel-kop,
+[data-theme="dark"] .eisenblok > summary,
+[data-theme="dark"] .scholier-blok > header {
+  background: linear-gradient(90deg, #0b2a4a, #143a63);
+}
+
+[data-theme="dark"] .groepsproduct th,
+[data-theme="dark"] .site-nav a.is-actief,
+[data-theme="dark"] .tijdlijn .punt {
+  background: #143a63;
+}
+
+[data-theme="dark"] .tijdlijn::before {
+  background: linear-gradient(var(--aqua), #1e568c);
+}
+
+[data-theme="dark"] .inhoud-fase a:hover {
+  background: var(--aqua);
+  color: #04101d;
 }

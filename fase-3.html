@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fase 3 - Ontwerpfase | Aqua-washers</title>
   <link rel="stylesheet" href="css/style.css">
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem("thema")||"light"}catch(e){}</script>
 </head>
 <body>
 
@@ -20,6 +21,15 @@
       </a>
       <button class="nav-toggle" aria-label="Menu openen" aria-expanded="false" aria-controls="site-nav">
         <span></span><span></span><span></span>
+      </button>
+      <button class="dark-toggle" type="button" aria-label="Donkere modus aan of uit zetten" title="Donkere modus aan/uit">
+        <svg class="ico-maan" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="ico-zon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+        </svg>
       </button>
       <nav class="site-nav" id="site-nav">
         <ul>
