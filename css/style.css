@@ -625,6 +625,45 @@ a:hover {
   margin-top: 14px;
 }
 
+/* Q&A-transcript in groepsproduct (bijv. interview opdrachtgever) */
+.groepsproduct .interview {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.groepsproduct .interview-stap {
+  background: var(--wit);
+  border: 1px solid var(--scheiding);
+  border-left: 4px solid var(--aqua);
+  border-radius: 0 var(--radius-klein) var(--radius-klein) 0;
+  padding: 12px 16px;
+}
+
+.groepsproduct .interview-vraag {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--blauw-900);
+}
+
+.groepsproduct .interview-vraag::before {
+  content: "Vraag — ";
+  color: var(--aqua-donker);
+}
+
+.groepsproduct .interview-antwoord {
+  margin-top: 4px;
+  font-size: 0.94rem;
+  color: var(--inkt);
+}
+
+.groepsproduct .interview-antwoord::before {
+  content: "Antwoord — ";
+  font-weight: 700;
+  color: var(--aqua-donker);
+}
+
 /* Tabellen in groepsproduct */
 .groepsproduct table {
   width: 100%;
