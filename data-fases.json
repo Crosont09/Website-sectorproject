@@ -1,0 +1,453 @@
+{
+  "fases": [
+    {
+      "nr": 1,
+      "naam": "Oriëntatiefase",
+      "sub": "Verkenning en onderzoeksvragen",
+      "lead": "De oriëntatiefase wordt ook wel de initiatiefase genoemd. In deze fase wordt het project gestart en worden doelen, vereisten en randvoorwaarden vastgesteld. Het projectteam identificeert de belanghebbenden, begrijpt de opdracht en bekijkt de haalbaarheid van het project.",
+      "onderdelen": [
+        {
+          "id": "1-1",
+          "nummer": "1.1",
+          "titel": "Projectteam samenstellen",
+          "kort": "Team en rollen",
+          "type": "groep",
+          "wat": "Teamsamenstelling, kwaliteiten, projectleider, onderlinge afspraken en wie eindverantwoordelijk is voor welk deel van het project.",
+          "groepsTitel": "Teamovereenkomst en verantwoordelijkheidsverdeling",
+          "groepsVraag": "Laat zien hoe het team is samengesteld (mix van richtingen), wie de projectleider is en welke onderlinge afspraken zijn gemaakt. Laad hier het ondertekende afsprakendocument op.",
+          "groepsBijlage": "teamovereenkomst-verantwoordelijkheden.pdf",
+          "studentVraag": "Beschrijf jouw kwaliteiten, jouw rol in het team en welk deel van het project jij als eindverantwoordelijke oppakt (bijv. werktuigbouw, elektrotechniek of automatisering).",
+          "bijlage": "rol-verantwoordelijkheid.pdf"
+        },
+        {
+          "id": "1-2",
+          "nummer": "1.2",
+          "titel": "Pakket van Eisen",
+          "kort": "Pakket van Eisen",
+          "type": "individueel",
+          "wat": "Alle inhoudelijke eisen die de opdrachtgever aan het resultaat stelt, geschreven vanuit jouw eigen verantwoordelijkheid.",
+          "studentVraag": "Doorloop de vragen uit de opdracht voor jouw eigen deel: waar moet ik mij aan houden, wat moet het resultaat kunnen, welke eisen en wensen heeft de klant, welke beperkingen en omgevingsfactoren spelen mee en welke onduidelijkheden neem ik mee in het interview?",
+          "bijlage": "pakket-van-eisen.pdf"
+        },
+        {
+          "id": "1-3",
+          "nummer": "1.3",
+          "titel": "Interview de opdrachtgever",
+          "kort": "Interview opdrachtgever",
+          "type": "groep",
+          "wat": "Interview voorbereiden en uitvoeren, vastleggen als letterlijk transcript, plus een eigen probleemstelling met start- en einddatum.",
+          "groepsTitel": "Interview met de opdrachtgever - transcript",
+          "groepsVraag": "Laad het transcript op met de letterlijke antwoorden van de opdrachtgever op de voorbereide vragen. Update na afloop het Pakket van Eisen met de antwoorden.",
+          "groepsBijlage": "interview-transcript.pdf",
+          "studentVraag": "Schrijf in eigen woorden op wat de opdrachtgever bedoelt met deze opdracht en wat hij of zij wil dat jullie doen (probleemstelling), zo specifiek mogelijk, inclusief de afgesproken start- en einddatum.",
+          "bijlage": "probleemstelling.pdf"
+        },
+        {
+          "id": "1-4",
+          "nummer": "1.4",
+          "titel": "Projectvoorstel",
+          "kort": "Projectvoorstel",
+          "type": "groep",
+          "wat": "Aanleiding, probleemanalyse, zo SMART mogelijk resultaat, haalbaarheid, globale aanpak en benodigde tijd, geld, mensen en middelen.",
+          "groepsTitel": "Projectvoorstel met SMART resultaat",
+          "groepsVraag": "Laad het projectvoorstel op: aanleiding, waarom het een probleem of kans is, het zo SMART mogelijk geformuleerde resultaat, de haalbaarheid (onderbouw zodat ja of nee geen antwoord is), de globale aanpak en wat er nodig is aan tijd, geld, mensen en middelen. Houd rekening met minimaal een week goedkeuring door de opdrachtgever.",
+          "groepsBijlage": "projectvoorstel.pdf",
+          "studentVraag": "Beschrijf jouw inbreng in het projectvoorstel: welk deel schreef jij en wat is voor jou het belangrijkste argument voor de haalbaarheid van jouw deel?",
+          "bijlage": "bijdrage-projectvoorstel.pdf"
+        },
+        {
+          "id": "1-5",
+          "nummer": "1.5",
+          "titel": "SWOT-analyse",
+          "kort": "SWOT-analyse",
+          "type": "groep",
+          "wat": "De vier kwadranten: sterktes en zwaktes binnen het project, kansen en bedreigingen van buitenaf.",
+          "groepsTitel": "SWOT-analyse",
+          "groepsVraag": "Laad de SWOT-analyse op met de vier kwadranten. Gebruik het project zelf als uitgangspunt en laat zien hoe de sterktes worden benut, zwaktes beperkt, kansen gegrepen en bedreigingen gemanaged worden.",
+          "groepsBijlage": "swot-analyse.pdf",
+          "studentVraag": "Welke sterktes, zwaktes, kansen en bedreigingen zie jij in en om jouw deel van het project?",
+          "bijlage": "swot-bijdrage.pdf"
+        }
+      ]
+    },
+    {
+      "nr": 2,
+      "naam": "Definitiefase",
+      "sub": "Afspraken en eisen vastleggen",
+      "lead": "In deze fase maak je zaken uit de oriëntatiefase concreet. Het projectresultaat wordt tastbaar gemaakt in een plan van aanpak, aangevuld met een uitgewerkte planning en een vergelijkend productonderzoek. Zo weet de opdrachtgever precies wat hij kan verwachten.",
+      "onderdelen": [
+        {
+          "id": "2-1",
+          "nummer": "2.1",
+          "titel": "Vergelijkend productonderzoek",
+          "kort": "Productonderzoek",
+          "type": "groep",
+          "wat": "Overzicht van vergelijkbare producten op de markt met per product voor- en nadelen inclusief onderbouwing.",
+          "groepsTitel": "Overzicht vergelijkbare producten",
+          "groepsVraag": "Laad het overzicht op van producten die al op de markt zijn en dezelfde functie vervullen. Schrijf achter elk product wat opvalt, wat je er goed aan vindt, wat minder goed is en geef bij elk punt de reden.",
+          "groepsBijlage": "vergelijkend-productonderzoek.pdf",
+          "studentVraag": "Welke vergelijkbare producten heb jij onderzocht die passen bij jouw deel van het project en welke inzichten leverden die op?",
+          "bijlage": "productonderzoek-bijdrage.pdf"
+        },
+        {
+          "id": "2-2",
+          "nummer": "2.2",
+          "titel": "Projectgrenzen en randvoorwaarden",
+          "kort": "Grenzen en randvoorwaarden",
+          "type": "groep",
+          "wat": "Plan van aanpak met data, deadlines, verantwoordelijkheden, beheer van documenten, scope, risicooplevering en overlegafspraken.",
+          "groepsTitel": "Plan van aanpak - projectgrenzen en randvoorwaarden",
+          "groepsVraag": "Laad het plan van aanpak op met de uitgewerkte punten: begin- en einddatum, momenten waarop het ontwerp aan de klant wordt voorgelegd, overige deadlines, wie er werkt, functies en verantwoordelijkheden, waar en hoe documenten worden bewaard (Teams, OneDrive), wat wel en niet bij het project hoort, de uit te voeren activiteiten, wanneer en hoe onderdelen worden besteld, risico's, hoe je overlegt en wat jullie uiteindelijk opleveren.",
+          "groepsBijlage": "plan-van-aanpak.pdf",
+          "studentVraag": "Schrijf voor jouw deel op wat er wel en niet onder jouw verantwoordelijkheid valt en hoe jij jouw documenten gaat bewaren en delen.",
+          "bijlage": "grenzen-bijdrage.pdf"
+        },
+        {
+          "id": "2-3",
+          "nummer": "2.3",
+          "titel": "Strokenplanning",
+          "kort": "Strokenplanning",
+          "type": "groep",
+          "wat": "Een strokenplanning van het hele project met alle 7 fases en de grofmazige werkzaamheden, afgestemd op de deadlines.",
+          "groepsTitel": "Strokenplanning van het project",
+          "groepsVraag": "Laad de strokenplanning op waarmee je aangeeft wanneer je aan iets begint en wanneer je het afrondt. Neem alle 7 fases op, reserveer tijd voor tekeningen, materialen en goedkeuring door de docent of opdrachtgever.",
+          "groepsBijlage": "strokenplanning.pdf",
+          "studentVraag": "Laat jouw deel van de planning zien: wanneer begin en eindig jij met de activiteiten waar jij verantwoordelijk voor bent?",
+          "bijlage": "planning-bijdrage.pdf"
+        }
+      ]
+    },
+    {
+      "nr": 3,
+      "naam": "Ontwerpfase",
+      "sub": "Concept, schetsen en prototypes",
+      "lead": "Het ontwerp van het project wordt ontwikkeld. Het projectteam creëert technische oplossingen, prototypes, schematische tekeningen of simulaties, rekening houdend met technische specificaties, regelgeving en andere vereisten.",
+      "onderdelen": [
+        {
+          "id": "3-1",
+          "nummer": "3.1",
+          "titel": "Functioneel ontwerp",
+          "kort": "Functioneel ontwerp",
+          "type": "individueel",
+          "wat": "In technische zin vaststellen wat het product moet kunnen en doen, ontleed in alle functies en onderdelen per richting (blokschema).",
+          "studentVraag": "Ontleed jouw deel van het project in alle functies en onderdelen en maak een beschrijving of een blokschema. Beantwoord daarbij: wat moet het doen, waarom is het nodig en hoe draagt het bij aan een veilige en betrouwbare werking?",
+          "bijlage": "functioneel-ontwerp.pdf"
+        },
+        {
+          "id": "3-2",
+          "nummer": "3.2",
+          "titel": "Mindmap",
+          "kort": "Mindmap",
+          "type": "groep",
+          "wat": "Brainstormen rond het product of probleem en alle gedachten vastleggen in een mindmap.",
+          "groepsTitel": "Mindmap brainstorm",
+          "groepsVraag": "Laad de mindmap op (bijv. uit XMind of Mindmeister) waarin het product of probleem centraal staat en alle bedachte gedachten eromheen zijn vastgelegd.",
+          "groepsBijlage": "mindmap.png",
+          "studentVraag": "Welke gedachten en invalshoeken heb jij aan de mindmap toegevoegd?",
+          "bijlage": "mindmap-bijdrage.png"
+        },
+        {
+          "id": "3-3",
+          "nummer": "3.3",
+          "titel": "Ideeschetsen",
+          "kort": "Ideeschetsen",
+          "type": "individueel",
+          "wat": "Voor de gekozen functies met verschillende oplossingen zoveel mogelijk ideechetsen maken, met potlood en gum op papier.",
+          "studentVraag": "Maak van jouw gekozen functies meerdere ideeschetsen. Laad hier je handmatige schetsen op als scan of foto.",
+          "bijlage": "ideeschetsen.jpg"
+        },
+        {
+          "id": "3-4",
+          "nummer": "3.4",
+          "titel": "Morfologische kaart",
+          "kort": "Morfologische kaart",
+          "type": "individueel",
+          "wat": "Voor elke functie van jouw deel horizontaal een reeks mogelijke oplossingen verzinnen en vastleggen.",
+          "studentVraag": "Maak een morfologische kaart voor jouw deel: zet de functies onder elkaar en nummer ze, en plaats achter elke functie de mogelijke oplossingen als tekening of afbeelding. Verzin zoveel mogelijk oplossingen voor de subfuncties.",
+          "bijlage": "morfologische-kaart.pdf"
+        },
+        {
+          "id": "3-5",
+          "nummer": "3.5",
+          "titel": "Wet- en regelgeving",
+          "kort": "Wet- en regelgeving",
+          "type": "groep",
+          "wat": "Alle wet- en regelgeving die voor het productresultaat geldt, inclusief milieu en duurzaamheid bij productie, gebruik en afdanking.",
+          "groepsTitel": "Overzicht wet- en regelgeving",
+          "groepsVraag": "Laad het overzicht op met de normen en regels die voor het product gelden (o.a. Machinerichtlijn, CE-markering, NEN-normen, NEN 3140, NEN-EN-IEC 60204-1, IEC 61131-3, AVG, Arbowet) en de milieubelasting bij productie, gebruik en na gebruik van het product.",
+          "groepsBijlage": "wet-regelgeving.pdf",
+          "studentVraag": "Schrijf op welke wet- en regelgeving specifiek voor jouw verantwoordelijkheid geldt en waarom die regels er zijn.",
+          "bijlage": "regelgeving-bijdrage.pdf"
+        },
+        {
+          "id": "3-6",
+          "nummer": "3.6",
+          "titel": "Keuze uit de ideeën",
+          "kort": "Keuze uit de ideeën",
+          "type": "groep",
+          "wat": "Minstens twee ideeën kiezen die het best voldoen aan het PvE, motiveren en voorleggen aan de opdrachtgever met reactie.",
+          "groepsTitel": "Keuze uit de ideeën (presentatie aan de opdrachtgever)",
+          "groepsVraag": "Laad de motivatie op waarom deze (minimaal twee) ideeën zijn gekozen, hoe ze aansluiten op het PvE en het verslag van de reactie van de opdrachtgever (Go of No-Go). Presenteer de keuzes bij de opdrachtgever en leg de reactie vast.",
+          "groepsBijlage": "keuze-ideeen-presentatie.pdf",
+          "studentVraag": "Welke ideeën kies jij voor jouw deel van het project, waarom voldoen ze volgens jou aan het PvE en wat was de reactie van de opdrachtgever?",
+          "bijlage": "keuze-bijdrage.pdf"
+        },
+        {
+          "id": "3-7",
+          "nummer": "3.7",
+          "titel": "Gedetailleerde concepten en technische tekeningen",
+          "kort": "Concepten en tekeningen",
+          "type": "individueel",
+          "wat": "De gekozen ideeën uitwerken tot concepten met materiaal, details, ergonomie en duurzaamheid, voor jouw deel van het project.",
+          "studentVraag": "Werk je concept uit voor jouw deel van het project op de thema materiaal (keuze onderdelen, toepasbaarheid, corrosie, onderhoud), details (verbindingen, bediening, bedrading), ergonomie (menselijke maten, makkelijk en veilig gebruik, kleuren) en duurzaamheid. Voeg zelf nog aandachtspunten toe. Werk de concepten ook uit op papier met tekeningen en neem een kort verslag van de vergaderingbespreking op.",
+          "bijlage": "conceptuitwerking.pdf"
+        },
+        {
+          "id": "3-8",
+          "nummer": "3.8",
+          "titel": "Materiaallijst",
+          "kort": "Materiaallijst",
+          "type": "individueel",
+          "wat": "Lijst van alle benodigde materialen voor jouw deel, gekoppeld aan de beschikbare leverancierslijst.",
+          "studentVraag": "Maak de materiaallijst voor jouw deel van het project, bij voorkeur volgens de Bestellijst Engineering per leverancier. Vul onderdelen die niet in de lijst staan aan bij de juiste leverancier en zet onderdelen die nergens besteld kunnen worden op het tabblad Overig na evaluatie.",
+          "bijlage": "materiaallijst.pdf"
+        },
+        {
+          "id": "3-9",
+          "nummer": "3.9",
+          "titel": "Kostenberekening",
+          "kort": "Kostenberekening",
+          "type": "individueel",
+          "wat": "Kostenoverzichten: uitvoeringskosten (uurtarieven mens en machine), materiaalkosten en risicokosten.",
+          "studentVraag": "Maak een kostenoverzicht voor jouw deel van het project: de uitvoeringskosten met uurtarieven van mens en machine inclusief hoe deze prijzen tot stand kwamen, de materiaalkosten en de risicokosten of kosten waarover nog geen sluitend antwoord bestaat.",
+          "bijlage": "kostenberekening.pdf"
+        },
+        {
+          "id": "3-10",
+          "nummer": "3.10",
+          "titel": "Offerte",
+          "kort": "Offerte",
+          "type": "groep",
+          "wat": "Een gespecificeerde offerte per student voor het eigen deel en een totaalofferte voor het hele project.",
+          "groepsTitel": "Totaalofferte van het project",
+          "groepsVraag": "Laad de totaalofferte op die met het gehele projectteam is gemaakt en waarin de kosten uit de kostenberekeningen van alle leden zijn opgenomen.",
+          "groepsBijlage": "offerte-totaal.pdf",
+          "studentVraag": "Maak de gespecificeerde offerte voor jouw deel van het project, gebaseerd op jouw kostenoverzicht. Neem deze mee in de totaalofferte.",
+          "bijlage": "offerte-deel.pdf"
+        }
+      ]
+    },
+    {
+      "nr": 4,
+      "naam": "Voorbereidingsfase",
+      "sub": "Klaar voor de uitvoering",
+      "lead": "De werkvoorbereiding: materialen en producten zijn beschikbaar, alle documenten voor de uitvoering zijn gekopieerd naar een aparte werkset en de planning van mensen, materialen en middelen staat. Zo kan de realisatie zonder chaos beginnen.",
+      "onderdelen": [
+        {
+          "id": "4-1",
+          "nummer": "4.1",
+          "titel": "Tekeningenpakket",
+          "kort": "Tekeningenpakket",
+          "type": "individueel",
+          "wat": "Alle technische tekeningen voor jouw richting: werktuigbouw, elektrotechniek of automatisering.",
+          "studentVraag": "Laad jouw tekeningenpakket op volgens de eisen voor jouw richting. Werktuigbouw: juiste aanzichten, doorsneden en schaal, maatvoering en een titelblok met projectnaam, onderdeelnummer, materiaal, massa, revisie, tekenaar en datum. Elektrotechniek: kastlayout, stroomkringschema met referenties en klemmenstrooktekening. Automatisering: functioneel schema, PLC I/O-kaart, proces- en stroomdiagrammen en een testopstelling.",
+          "bijlage": "tekeningenpakket.pdf"
+        },
+        {
+          "id": "4-2",
+          "nummer": "4.2",
+          "titel": "Planning mensen, materialen en middelen",
+          "kort": "Dagplanning uitvoering",
+          "type": "groep",
+          "wat": "Een planning per uitvoeringsdag, beschreven per uur, met materialen, machines, uren en afstemming van afhankelijkheden.",
+          "groepsTitel": "Uitvoeringsplanning per dag",
+          "groepsVraag": "Laad de dagplanning op (per uur) met benodigde materialen, machines en het aantal uren per werkzaamheid. Stem afhankelijkheden op elkaar af, bijvoorbeeld dat eerst een elektroplaat wordt gemaakt zodat de montage van onderdelen kan volgen, en houd rekening met bottlenecks zoals gedeeld gereedschap en 3D-printtijd.",
+          "groepsBijlage": "uitvoeringsplanning.pdf",
+          "studentVraag": "Laat jouw uitvoeringsdagen zien: welke taken voer jij wanneer uit, welke materialen en machines heb je nodig, hoeveel uur kost het en waar moet jij op wachten van een ander teamlid?",
+          "bijlage": "uitvoeringsplanning-bijdrage.pdf"
+        },
+        {
+          "id": "4-3",
+          "nummer": "4.3",
+          "titel": "Tussenoplevering",
+          "kort": "Tussenoplevering",
+          "type": "groep",
+          "wat": "De tussenoplevering: fase 1 t/m 4 uitgewerkt in het website-verslag en een presentatie over verantwoordelijkheden, projectomschrijving, ontwerpgegevens, materialen, kosten, tekeningen en planning.",
+          "groepsTitel": "Tussenoplevering - verslag en presentatie",
+          "groepsVraag": "Laad hier de presentatie van de tussenoplevering op. Verwerk daarin: verantwoordelijkheden, projectomschrijving, ontwerpgegevens (wensen en eisen van de klant), wat je ontworpen hebt, de materialen, de kosten, het tekeningenpakket en de planning inclusief afstemming. Het website-verslag is deze site zelf (fase 1 t/m 4).",
+          "groepsBijlage": "tussenoplevering-presentatie.pdf",
+          "studentVraag": "Beschrijf jouw deel van de tussenoplevering: schrijf per onderdeel kort op wat jij hebt ontworpen en waarom (eisen, materialen, kosten), wat jouw tekeningen laten zien en wat jouw planning zegt. Noteer ook welk deel van de presentatie jij vertelt.",
+          "bijlage": "tussenoplevering-bijdrage.pdf"
+        }
+      ]
+    },
+    {
+      "nr": 5,
+      "naam": "Realisatiefase",
+      "sub": "Bouwen, maken en testen",
+      "lead": "Dit is de uitvoeringsfase: het projectteam voert de geplande activiteiten uit volgens planning en specificaties. Er wordt gebouwd, geïmplementeerd en getest. Het team houdt voortgang bij, beheert wijzigingen en lost problemen op.",
+      "onderdelen": [
+        {
+          "id": "5-1",
+          "nummer": "5.1",
+          "titel": "Urenverantwoording",
+          "kort": "Urenverantwoording",
+          "type": "individueel",
+          "wat": "Per week en bij voorkeur per dag vastleggen wat je hebt gedaan, met korte aantekeningen en wekelijkse reflectie.",
+          "studentVraag": "Laad jouw urenverantwoording op. Houd per week en bij voorkeur per dag bij wat je hebt gedaan, maak korte aantekeningen en reflecteer wekelijks op je eigen voortgang.",
+          "bijlage": "urenverantwoording.pdf"
+        },
+        {
+          "id": "5-2",
+          "nummer": "5.2",
+          "titel": "Overzicht meer- en minderwerk en materiaal",
+          "kort": "Meer- en minderwerk",
+          "type": "groep",
+          "wat": "Afwijkingen van planning en materiaal bijhouden en nacalculeren, voor akkoord getekend door de opdrachtgever.",
+          "groepsTitel": "Nacalculatie en meer- en minderwerk",
+          "groepsVraag": "Laad de nacalculatie van het project op met de werkelijke gegevens. Noteer waar en waarom er is afgeweken, of er meer of minder materiaal nodig was dan gepland en zorg dat de opdrachtgever deze voor akkoord tekent.",
+          "groepsBijlage": "nacalculatie-akkoord.pdf",
+          "studentVraag": "Noteer voor jouw deel waar en waarom je afweek van de planning en of je meer of minder materiaal gebruikt hebt dan gepland.",
+          "bijlage": "meerminderwerk-bijdrage.pdf"
+        },
+        {
+          "id": "5-3",
+          "nummer": "5.3",
+          "titel": "Plannings-, voortgangs- en begrotingsrapportage",
+          "kort": "Rapportages",
+          "type": "groep",
+          "wat": "Wekelijkse overlegmomenten en rapportages over planning (waar staan we), voortgang (terug- en vooruitkijken) en begroting (financiële voortgang).",
+          "groepsTitel": "Wekelijkse plannings-, voortgangs- en begrotingsrapportage",
+          "groepsVraag": "Laad de rapportages van de wekelijkse overlegmomenten op. Vergelijk de voortgang met de oorspronkelijke planning, ga in op samenhangen zoals afhankelijkheden, risico's en benodigde middelen, en geef inzicht in de financiële voortgang zodat het budget niet overschrijdt. Plan minimaal een keer per week een vergadering.",
+          "groepsBijlage": "voortgangsrapportages.pdf",
+          "studentVraag": "Beschrijf per verslagmoment hoe jouw deel ervoor stond: wat is gerealiseerd, wat moet er nog gebeuren en hoe zit het met jouw deel van het budget?",
+          "bijlage": "voortgang-bijdrage.pdf"
+        },
+        {
+          "id": "5-4",
+          "nummer": "5.4",
+          "titel": "Ingevuld testrapport",
+          "kort": "Testrapport",
+          "type": "individueel",
+          "wat": "Controleren dat het gemonteerde product of de installatie daadwerkelijk zo werkt als vastgelegd, getest door iemand anders dan de maker.",
+          "studentVraag": "Laad jouw ingevulde testrapport op. Laat iemand anders testen dan diegene die het product of onderdeel heeft gemaakt, haal de tekeningen erbij en bevestig per testpunt of het resultaat overeenkomt met wat is vastgelegd.",
+          "bijlage": "testrapport.pdf"
+        }
+      ]
+    },
+    {
+      "nr": 6,
+      "naam": "Opleveringsfase",
+      "sub": "Presenteren, controleren en overdragen",
+      "lead": "Na afronding van de realisatiefase wordt het project officieel opgeleverd. Het projectresultaat wordt gecontroleerd op de oorspronkelijke doelstellingen en specificaties, eventuele laatste aanpassingen worden doorgevoerd en de documentatie en rapportage worden voltooid. Daarna wordt het project overgedragen aan de opdrachtgever.",
+      "onderdelen": [
+        {
+          "id": "6-0",
+          "nummer": "Intro",
+          "titel": "Eindoplevering - verslag en presentatie",
+          "kort": "Eindoplevering",
+          "type": "groep",
+          "wat": "De eindoplevering met verslag (deze website, fase 5 t/m 7 uitgewerkt) en een presentatie over het projectverloop.",
+          "groepsTitel": "Presentatie eindoplevering",
+          "groepsVraag": "Laad hier de presentatie van de eindoplevering op. Verwerk daarin het projectverloop, de kwaliteit, het onderhoud en het reflectiemoment (zie de onderdelen hieronder), met als slot een vragenrondje en dankwoord. Oefen de presentatie als groep en verdeel wie wat vertelt.",
+          "groepsBijlage": "eindoplevering-presentatie.pdf",
+          "studentVraag": "Beschrijf jouw deel van de eindoplevering: hoe verlopen voor jouw taken het project, hoe ging het uitvoeren van de planning, wat ging goed en minder goed en wat moest je bijstellen met welke gevolgen?",
+          "bijlage": "projectverloop-bijdrage.pdf"
+        },
+        {
+          "id": "6-1",
+          "nummer": "6.1",
+          "titel": "Rapportage programma van eisen",
+          "kort": "Rapportage PvE",
+          "type": "individueel",
+          "wat": "Terugblikken op het PvE uit de oriëntatiefase en aantonen waarom je er wel of niet aan voldoet.",
+          "studentVraag": "Rapporteer per eis en wens uit jouw Pakket van Eisen of je eraan voldoet en onderbouw dit. Waar je niet voldoet beschrijf je waarom dat zo is en of en wanneer het wordt opgelost.",
+          "bijlage": "rapportage-pve.pdf"
+        },
+        {
+          "id": "6-2",
+          "nummer": "6.2",
+          "titel": "Opleveringschecklist",
+          "kort": "Opleveringschecklist",
+          "type": "groep",
+          "wat": "Checklist van zaken die bij de overdracht aanwezig moeten zijn, ondertekend door de docent, met ruimte voor nog te verbeteren punten.",
+          "groepsTitel": "Opleveringschecklist (ondertekend)",
+          "groepsVraag": "Laad de opleveringschecklist op met daarin wat er wordt opgeleverd, of het werkt volgens de eisen en wensen en of alles compleet is. Zet er ook op wat er nog verbeterd moet worden en voor wanneer dat klaar moet zijn. Zorg dat de docent deze ondertekent en bewaar een kopie zodat je altijd kunt aantonen wat je hebt opgeleverd.",
+          "groepsBijlage": "opleveringschecklist.pdf",
+          "studentVraag": "Beschrijf voor jouw deel wat je oplevert en hoe je kunt aantonen dat het werkt volgens de eisen en wensen.",
+          "bijlage": "checklist-bijdrage.pdf"
+        },
+        {
+          "id": "6-3",
+          "nummer": "6.3",
+          "titel": "Reflectieverslag",
+          "kort": "Reflectieverslag",
+          "type": "individueel",
+          "wat": "Terugblikken op het project: doelen, geleerde lessen, samenwerking, aanbevelingen, drie tops en drie tips.",
+          "studentVraag": "Schrijf je reflectieverslag en beantwoord de vragen uit de opdracht: wat wilde je van dit project leren, wat heb je geleerd, wat ging er goed, wat kon beter, hoe verliep de samenwerking en waarom, welke aanbevelingen heb je voor een volgend project, wat ga je zelf de volgende keer beter doen, en geef drie tops en drie tips.",
+          "bijlage": "reflectieverslag.pdf"
+        }
+      ]
+    },
+    {
+      "nr": 7,
+      "naam": "Nazorgfase",
+      "sub": "Afronden en terugblikken",
+      "lead": "Het project wordt afgerond. De eerste oplevering is geweest en de verbeterpunten worden daadwerkelijk afgehandeld. Daarna wordt het product definitief overgedragen en worden zaken rond onderhoud en beheer geregeld zodat de eindgebruiker er lang plezier van heeft.",
+      "onderdelen": [
+        {
+          "id": "7-1",
+          "nummer": "7.1",
+          "titel": "Definitief eindproduct",
+          "kort": "Definitief eindproduct",
+          "type": "groep",
+          "wat": "Afhandelen van alle op de opleveringschecklist genoteerde verbeterpunten en de definitieve overdracht aan de eindgebruiker.",
+          "groepsTitel": "Afgehandelde verbeterpunten en definitieve overdracht",
+          "groepsVraag": "Laad het document op waarin per verbeterpunt van de opleveringschecklist staat dat het is gerealiseerd en wanneer klaar was. Zorg dat bij deze overdracht geen nieuwe punten worden genoemd en laat het product daarna definitief overdragen aan de eindgebruiker.",
+          "groepsBijlage": "definitieve-overdracht.pdf",
+          "studentVraag": "Beschrijf welke verbeterpunten jij hebt afgehandeld en wanneer jouw deel van het product definitief is overgedragen.",
+          "bijlage": "eindproduct-bijdrage.pdf"
+        },
+        {
+          "id": "7-2",
+          "nummer": "7.2",
+          "titel": "Verbeterpunten voor product en proces",
+          "kort": "Verbeterpunten product en proces",
+          "type": "groep",
+          "wat": "Beoordelen of het product in gebruik nog deugdelijk is, welke product- en procesverbeterpunten er zijn en waar rekening mee te houden bij onderhoud en gebruik.",
+          "groepsTitel": "Verbeterpunten voor het product en het proces",
+          "groepsVraag": "Laad de uitgewerkte verbeterpunten op: zijn de oorspronkelijke eisen en wensen nog steeds van toepassing en voldoet het product daar nog aan, wat zijn de verbeterpunten voor het product, wat kan in het productieproces efficiënter of milieuvriendelijker, en waarmee moet rekening gehouden worden bij onderhoud en gebruik?",
+          "groepsBijlage": "verbeterpunten-product-proces.pdf",
+          "studentVraag": "Beantwoord deze vragen voor jouw deel van het product en proces en geef aan of een kleine modificatie volstaat of dat er een nieuw project nodig is.",
+          "bijlage": "verbeterpunten-bijdrage.pdf"
+        },
+        {
+          "id": "7-3",
+          "nummer": "7.3",
+          "titel": "Rapportage van status onderhoud en beheer",
+          "kort": "Status onderhoud en beheer",
+          "type": "groep",
+          "wat": "Vastleggen van de onderhoudsstatus van het product of de machine, inclusief de mogelijke kosten van onderhoud en beheer.",
+          "groepsTitel": "Rapportage status onderhoud en beheer",
+          "groepsVraag": "Laad de rapportage op van de status van onderhoud en beheer. Het accent ligt op het gebruik van het product of de machine. Neem ook de mogelijke kosten van het onderhoud en beheer mee.",
+          "groepsBijlage": "rapportage-onderhoud-beheer.pdf",
+          "studentVraag": "Beschrijf de status van onderhoud en beheer voor jouw deel van het project en wat dit betekent voor de gebruiker.",
+          "bijlage": "onderhoud-bijdrage.pdf"
+        },
+        {
+          "id": "7-4",
+          "nummer": "7.4",
+          "titel": "Onderhoud aan producten en systemen",
+          "kort": "Onderhoudsvormen",
+          "type": "groep",
+          "wat": "De toe te passen onderhoudsvormen vastleggen en een onderhoudsprogramma opstellen voor het product of de machine.",
+          "groepsTitel": "Onderhoudsplan en onderhoudsvormen",
+          "groepsVraag": "Laad het onderhoudsplan op met daarin de toe te passen onderhoudsvormen: reactief of correctief onderhoud (na een storing of klacht) en proactief onderhoud, opgesplitst in preventief onderhoud (voorkomen van defecten) en periodiek onderhoud (op basis van tijdsduur of draaiuren).",
+          "groepsBijlage": "onderhoudsplan.pdf",
+          "studentVraag": "Welke onderhoudsvorm pas jij toe op jouw deel, wat moet er worden onderhouden en met welk interval?",
+          "bijlage": "onderhoud-bijdrage.pdf"
+        }
+      ]
+    }
+  ]
+}

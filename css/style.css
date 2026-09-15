@@ -1,0 +1,1087 @@
+/* ==========================================================================
+   Sportvelden / Aqua-washers — Sectorproject Autowasstraat
+   Stylesheet: autowas-thema (blauw + schuim), responsive, zonder frameworks
+   ========================================================================== */
+
+:root {
+  --blauw-950: #07233f;
+  --blauw-900: #0b2a4a;
+  --blauw-700: #143a63;
+  --blauw-500: #1e568c;
+  --aqua: #11b3c9;
+  --aqua-donker: #0c8ea4;
+  --aqua-light: #7fe3ef;
+  --schuim: #eaf9fb;
+  --schuim-licht: #f5fcfd;
+  --wit: #ffffff;
+  --inkt: #1c2b38;
+  --grijs: #5b6b78;
+  --scheiding: #dce9ec;
+  --markering: #fff3b0;      /* gele plekhouderkleur */
+  --markering-tekst: #6b5710;
+  --schaduw: 0 10px 30px rgba(11, 42, 74, 0.12);
+  --radius: 16px;
+  --radius-klein: 10px;
+  --font: "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 92px;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--inkt);
+  background: var(--schuim-licht);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--aqua-donker);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: min(1120px, 92%);
+  margin-inline: auto;
+}
+
+::selection {
+  background: var(--aqua);
+  color: var(--wit);
+}
+
+/* ==========================================================================
+   Header & navigatie
+   ========================================================================== */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--scheiding);
+}
+
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 72px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--blauw-900);
+  letter-spacing: 0.02em;
+}
+
+.brand:hover {
+  text-decoration: none;
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--aqua), var(--aqua-donker));
+  color: var(--wit);
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.15);
+}
+
+.site-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  color: var(--blauw-700);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.site-nav a:hover {
+  background: var(--schuim);
+  color: var(--blauw-900);
+  text-decoration: none;
+}
+
+.site-nav a.is-actief {
+  background: var(--blauw-900);
+  color: var(--wit);
+}
+
+/* Hamburger-menu (mobiel) */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  border: 1px solid var(--scheiding);
+  border-radius: 10px;
+  background: var(--wit);
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--blauw-900);
+  border-radius: 2px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-toggle.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ==========================================================================
+   Home-hero met schuim/zeepbellen
+   ========================================================================== */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  color: var(--wit);
+  background:
+    radial-gradient(circle at 85% 15%, rgba(127, 227, 239, 0.35), transparent 42%),
+    linear-gradient(160deg, var(--blauw-950) 0%, var(--blauw-700) 55%, var(--blauw-500) 100%);
+  padding: clamp(64px, 10vw, 130px) 0 clamp(64px, 9vw, 120px);
+  text-align: center;
+}
+
+.bubbles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.zeepbel {
+  position: absolute;
+  bottom: -160px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.9), rgba(127, 227, 239, 0.25) 60%, transparent 70%);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  animation: zweven linear infinite;
+}
+
+@keyframes zweven {
+  0%   { transform: translateY(0) translateX(0) scale(1); }
+  50%  { transform: translateY(-55vh) translateX(30px) scale(1.06); }
+  100% { transform: translateY(-115vh) translateX(-20px) scale(1.12); }
+}
+
+.hero-kicker {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 6px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.hero h1 {
+  position: relative;
+  font-size: clamp(2rem, 6vw, 3.6rem);
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+}
+
+.hero .ondertitel {
+  position: relative;
+  font-size: clamp(1.15rem, 3vw, 1.5rem);
+  color: var(--aqua-light);
+  font-weight: 600;
+}
+
+.hero .lead {
+  position: relative;
+  max-width: 640px;
+  margin: 22px auto 0;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.hero-badges {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 34px;
+}
+
+.hero-badge {
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.hero-badge strong {
+  color: var(--aqua-light);
+}
+
+/* Kleine hero voor de fasepagina's */
+.page-hero {
+  padding: clamp(40px, 7vw, 76px) 0;
+  color: var(--wit);
+  background:
+    radial-gradient(circle at 90% 10%, rgba(127, 227, 239, 0.3), transparent 45%),
+    linear-gradient(150deg, var(--blauw-950), var(--blauw-700));
+}
+
+.page-hero .kicker {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--aqua-light);
+  margin-bottom: 8px;
+}
+
+.page-hero h1 {
+  font-size: clamp(1.9rem, 4.5vw, 2.8rem);
+  line-height: 1.12;
+  margin-bottom: 6px;
+}
+
+.page-hero .accent {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 2px;
+  border-bottom: 3px solid var(--aqua);
+}
+
+.page-hero .lead {
+  max-width: 720px;
+  margin-top: 16px;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1.05rem;
+}
+
+/* ==========================================================================
+   Secties & blokken
+   ========================================================================== */
+
+.sectie {
+  padding: clamp(40px, 6vw, 72px) 0;
+}
+
+.sectie-titel {
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  color: var(--blauw-900);
+  margin-bottom: 8px;
+}
+
+.sectie-lead {
+  color: var(--grijs);
+  max-width: 680px;
+  margin-bottom: 28px;
+}
+
+/* ==========================================================================
+   Kaarten & grids
+   ========================================================================== */
+
+.kaarten-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.kaart {
+  background: var(--wit);
+  border: 1px solid var(--scheiding);
+  border-radius: var(--radius);
+  padding: 26px;
+  box-shadow: var(--schaduw);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kaart:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(11, 42, 74, 0.18);
+}
+
+.kaart .ico-fase {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 16px;
+  border-radius: 14px;
+  background: var(--schuim);
+  color: var(--aqua-donker);
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+.kaart h3 {
+  font-size: 1.12rem;
+  color: var(--blauw-900);
+  margin-bottom: 8px;
+}
+
+.kaart p {
+  color: var(--grijs);
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+}
+
+.kaart .kaart-link {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--aqua-donker);
+}
+
+/* ==========================================================================
+   Infolijst (voor de voorpagina: school, docenten, etc.)
+   ========================================================================== */
+
+.infolijst {
+  list-style: none;
+  border-top: 1px solid var(--scheiding);
+}
+
+.infolijst li {
+  display: flex;
+  gap: 14px;
+  align-items: baseline;
+  padding: 16px 4px;
+  border-bottom: 1px solid var(--scheiding);
+}
+
+.infolijst .label {
+  min-width: 130px;
+  font-weight: 700;
+  color: var(--blauw-700);
+}
+
+.infolijst .waarde {
+  color: var(--inkt);
+}
+
+/* ==========================================================================
+   Team-pagina-deel van de voorpagina
+   ========================================================================== */
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.team-kaart {
+  text-align: center;
+  background: var(--wit);
+  border: 1px solid var(--scheiding);
+  border-radius: var(--radius);
+  padding: 28px 20px;
+  box-shadow: var(--schaduw);
+  transition: transform 0.2s ease;
+}
+
+.team-kaart:hover {
+  transform: translateY(-4px);
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+  width: 84px;
+  height: 84px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  color: var(--wit);
+  font-size: 2rem;
+  font-weight: 800;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.avatar.esi  { background: linear-gradient(135deg, #c2577f, #8f3d5f); }
+.avatar.daan { background: linear-gradient(135deg, #1e568c, #17507c); }
+.avatar.men  { background: linear-gradient(135deg, #11b3c9, #0c8ea4); }
+
+.team-kaart h3 {
+  color: var(--blauw-900);
+  font-size: 1.1rem;
+}
+
+.team-kaart .rol {
+  color: var(--grijs);
+  font-size: 0.88rem;
+  margin: 4px 0 12px;
+}
+
+/* ==========================================================================
+   Avatars (algemeen herbruikbaar)
+   ========================================================================== */
+
+.avatar-klein {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--wit);
+  font-weight: 800;
+  font-size: 1.05rem;
+  flex: none;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.15);
+}
+
+.avatar-klein.esi  { background: linear-gradient(135deg, #c2577f, #8f3d5f); }
+.avatar-klein.daan { background: linear-gradient(135deg, #1e568c, #17507c); }
+.avatar-klein.men  { background: linear-gradient(135deg, #11b3c9, #0c8ea4); }
+
+/* ==========================================================================
+   Fase-pagina's: inhoudsopgave (snelsprong naar onderdelen)
+   ========================================================================== */
+
+.inhoud-fase {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  background: var(--wit);
+  border: 1px solid var(--scheiding);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  margin-bottom: 30px;
+  box-shadow: var(--schaduw);
+}
+
+.inhoud-fase .inhoud-label {
+  flex: 0 0 100%;
+  font-weight: 800;
+  color: var(--blauw-900);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  margin-bottom: 2px;
+}
+
+.inhoud-fase a {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--schuim);
+  border: 1px solid var(--scheiding);
+  color: var(--blauw-700);
+  font-weight: 700;
+  font-size: 0.88rem;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.inhoud-fase a:hover {
+  background: var(--aqua-light);
+  border-color: var(--aqua);
+  color: var(--blauw-900);
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   Fase-pagina's: onderdelen (1.1, 1.2, ...) en studentkaarten
+   ========================================================================== */
+
+.onderdeel {
+  scroll-margin-top: 96px;
+  margin-bottom: 32px;
+  background: var(--wit);
+  border: 1px solid var(--scheiding);
+  border-radius: var(--radius);
+  box-shadow: var(--schaduw);
+  overflow: hidden;
+}
+
+.onderdeel-kop {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px 24px;
+  background: linear-gradient(90deg, var(--blauw-900), var(--blauw-700));
+  color: var(--wit);
+}
+
+.onderdeel-nummer {
+  display: grid;
+  place-items: center;
+  flex: none;
+  min-width: 52px;
+  min-height: 40px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  font-weight: 800;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.onderdeel-kop h2 {
+  font-size: 1.18rem;
+  line-height: 1.25;
+}
+
+.onderdeel-kop .onderdeel-wat {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.onderdeel-body {
+  padding: 24px;
+}
+
+.groepsproduct {
+  border: 2px solid var(--aqua);
+  border-radius: var(--radius-klein);
+  background: var(--schuim);
+  padding: 20px;
+  margin-bottom: 22px;
+}
+
+.groeps-tag {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--aqua);
+  color: var(--wit);
+  font-weight: 800;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.groepsproduct h4 {
+  color: var(--blauw-900);
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.groepsproduct p {
+  color: var(--inkt);
+  font-size: 0.94rem;
+}
+
+.groepsproduct .media-slot {
+  margin-top: 14px;
+}
+
+.studenten-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.studentkaart {
+  border: 1px dashed var(--scheiding);
+  border-radius: var(--radius-klein);
+  padding: 18px;
+  background: var(--schuim-licht);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.studentkaart > header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.studentkaart h5 {
+  color: var(--blauw-900);
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.studentkaart .kaart-label {
+  color: var(--aqua-donker);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.studentkaart p {
+  font-size: 0.94rem;
+  color: var(--inkt);
+}
+
+.studentkaart .maakletwat {
+  color: var(--grijs);
+  font-size: 0.86rem;
+}
+
+.sprong-anker {
+  position: relative;
+  top: -90px;
+  display: block;
+}
+
+/* ==========================================================================
+   Fase-pagina's (verouderde indeling, bewaard voor compatibiliteit)
+   ========================================================================== */
+
+.fase-intro {
+  background: var(--wit);
+  border: 1px solid var(--scheiding);
+  border-left: 6px solid var(--aqua);
+  border-radius: var(--radius-klein);
+  padding: 22px 26px;
+  margin-bottom: 28px;
+  box-shadow: var(--schaduw);
+}
+
+.fase-intro h2 {
+  color: var(--blauw-900);
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+}
+
+.fase-intro .doel {
+  color: var(--grijs);
+}
+
+.scholier-blok {
+  scroll-margin-top: 96px;
+  margin-bottom: 36px;
+  background: var(--wit);
+  border: 1px solid var(--scheiding);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--schaduw);
+}
+
+.scholier-blok > header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 24px;
+  background: linear-gradient(90deg, var(--blauw-900), var(--blauw-700));
+  color: var(--wit);
+}
+
+.scholier-blok > header .avatar-klein {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--wit);
+  flex: none;
+}
+
+.scholier-blok > header h3 {
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
+.scholier-blok > header .sub {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.scholier-blok .blok-body {
+  padding: 24px;
+}
+
+.producten-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+/* ==========================================================================
+   Productblokken (de eigenlijke invulplekken)
+   ========================================================================== */
+
+.product {
+  border: 1px dashed var(--scheiding);
+  border-radius: var(--radius-klein);
+  padding: 20px;
+  background: var(--schuim-licht);
+}
+
+.product h4 {
+  font-size: 1rem;
+  color: var(--blauw-900);
+  margin-bottom: 6px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.product p {
+  font-size: 0.94rem;
+  color: var(--inkt);
+}
+
+.product p.maakletwat {
+  color: var(--grijs);
+  font-size: 0.86rem;
+  margin-top: 6px;
+}
+
+/* Media-/bijlageslot: deze vervang je door een <img> of <a> */
+.media-slot {
+  margin-top: 14px;
+  padding: 14px;
+  border: 2px dashed var(--scheiding);
+  border-radius: var(--radius-klein);
+  background: var(--wit);
+  color: var(--grijs);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.media-slot p {
+  color: inherit;
+  font-size: inherit;
+}
+
+/* Gele plekhouder die de student straks vervangt door eigen tekst */
+.ph {
+  background: var(--markering);
+  color: var(--markering-tekst);
+  padding: 1px 6px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+/* ==========================================================================
+   Studentpagina's
+   ========================================================================== */
+
+.profiel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  background: var(--wit);
+  border: 1px solid var(--scheiding);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: var(--schaduw);
+}
+
+.profiel .avatar {
+  flex: none;
+  width: 120px;
+  height: 120px;
+  font-size: 3rem;
+}
+
+.profiel .profiel-info h1 {
+  color: var(--blauw-900);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.profiel .rol {
+  color: var(--aqua-donker);
+  font-weight: 700;
+}
+
+.citaat {
+  margin-top: 18px;
+  border-left: 4px solid var(--aqua);
+  background: var(--schuim);
+  padding: 14px 18px;
+  border-radius: 0 var(--radius-klein) var(--radius-klein) 0;
+  font-style: italic;
+  color: var(--blauw-700);
+}
+
+.fase-koppelingen {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  list-style: none;
+}
+
+.fase-koppelingen a {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  background: var(--wit);
+  border: 1px solid var(--scheiding);
+  border-radius: var(--radius-klein);
+  padding: 16px 18px;
+  font-weight: 700;
+  color: var(--blauw-900);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.fase-koppelingen a:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: var(--schaduw);
+}
+
+.fase-koppelingen .fase-nr {
+  color: var(--aqua-donker);
+  font-size: 1.15rem;
+}
+
+/* ==========================================================================
+   Tijdlijn (voorpagina overzicht van de 7 fasen)
+   ========================================================================== */
+
+.tijdlijn {
+  list-style: none;
+  position: relative;
+  max-width: 820px;
+  margin-inline: auto;
+}
+
+.tijdlijn::before {
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: 8px;
+  bottom: 8px;
+  width: 3px;
+  background: linear-gradient(var(--aqua), var(--blauw-500));
+  border-radius: 3px;
+}
+
+.tijdlijn li {
+  position: relative;
+  padding: 0 0 26px 68px;
+}
+
+.tijdlijn li:last-child {
+  padding-bottom: 0;
+}
+
+.tijdlijn .punt {
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  display: grid;
+  place-items: center;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  background: var(--blauw-900);
+  color: var(--wit);
+  font-weight: 800;
+  font-size: 0.85rem;
+  border: 3px solid var(--aqua-light);
+}
+
+.tijdlijn h3 {
+  color: var(--blauw-900);
+  font-size: 1.12rem;
+}
+
+.tijdlijn p {
+  color: var(--grijs);
+  font-size: 0.94rem;
+}
+
+.tijdlijn hr {
+  margin: 6px 0 12px;
+  border: none;
+  border-top: 1px dashed var(--scheiding);
+  width: 40px;
+}
+
+/* ==========================================================================
+   Tussenblok (opvallende oproep, bijv. "datum nog niet ingevuld")
+   ========================================================================== */
+
+.attentie {
+  background: var(--markering);
+  color: var(--markering-tekst);
+  border-radius: var(--radius-klein);
+  padding: 14px 18px;
+  font-weight: 600;
+  margin-top: 16px;
+  display: inline-block;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.site-footer {
+  margin-top: 60px;
+  background: var(--blauw-950);
+  color: rgba(255, 255, 255, 0.82);
+  padding: 40px 0;
+}
+
+.site-footer .footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 28px;
+}
+
+.site-footer h4 {
+  color: var(--aqua-light);
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.site-footer ul {
+  list-style: none;
+}
+
+.site-footer li {
+  margin-bottom: 6px;
+  font-size: 0.92rem;
+}
+
+.site-footer a {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.site-footer a:hover {
+  color: var(--aqua-light);
+}
+
+.site-footer .bottom {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+
+/* ==========================================================================
+   Animatie bij scrollen
+   ========================================================================== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.zichtbaar {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .zeepbel {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width: 860px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: var(--wit);
+    border-bottom: 1px solid var(--scheiding);
+    box-shadow: var(--schaduw);
+    display: none;
+    padding: 12px 4vw 20px;
+  }
+
+  .site-nav.open {
+    display: block;
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+  }
+
+  .site-nav a {
+    display: block;
+    border-radius: 10px;
+    padding: 12px 14px;
+  }
+
+  .infolijst li {
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-start;
+  }
+}
