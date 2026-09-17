@@ -794,6 +794,85 @@ a:hover {
   font-size: 0.86rem;
 }
 
+/* SWOT-analyse (1.5): kwadranten-grid */
+.swot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.swot-kwadrant {
+  background: var(--wit);
+  border: 1px solid var(--scheiding);
+  border-radius: var(--radius-klein);
+  overflow: hidden;
+}
+
+.swot-kwadrant .swot-kop {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  color: var(--wit);
+  font-weight: 800;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.swot-kwadrant .swot-kop::before {
+  content: attr(data-teken);
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.swot-kwadrant ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 14px 12px;
+}
+
+.swot-kwadrant li {
+  font-size: 0.9rem;
+  color: var(--inkt);
+  line-height: 1.5;
+  padding-left: 16px;
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.swot-kwadrant li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--aqua);
+}
+
+.swot-kwadrant li:last-child {
+  margin-bottom: 0;
+}
+
+.swot-kwadrant--sterkte .swot-kop { background: var(--aqua); }
+.swot-kwadrant--zwakte .swot-kop { background: var(--blauw-700); }
+.swot-kwadrant--kans .swot-kop { background: var(--aqua-donker); }
+.swot-kwadrant--bedreiging .swot-kop { background: var(--blauw-900); }
+
+.swot-kwadrant--sterkte li::before { background: var(--aqua); }
+.swot-kwadrant--zwakte li::before { background: var(--blauw-700); }
+.swot-kwadrant--kans li::before { background: var(--aqua-donker); }
+.swot-kwadrant--bedreiging li::before { background: var(--blauw-900); }
+
 /* ==========================================================================
    Pakket van Eisen (1.2): volle-breedte blokken per student
    ========================================================================== */
