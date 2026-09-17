@@ -794,6 +794,89 @@ a:hover {
   font-size: 0.86rem;
 }
 
+/* Vergelijkbaar productonderzoek (2.1): productkaarten + conclusie in studentkaart */
+.was-producten {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 14px;
+  margin: 12px 0 18px;
+}
+
+.was-product {
+  background: var(--wit);
+  border: 1px solid var(--scheiding);
+  border-radius: var(--radius-klein);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.was-product h6 {
+  color: var(--blauw-900);
+  font-size: 0.95rem;
+  line-height: 1.3;
+  margin: 0;
+  padding-bottom: 7px;
+  border-bottom: 2px solid var(--aqua-light);
+}
+
+.was-product p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--grijs);
+  margin: 0;
+}
+
+.was-product .was-plus,
+.was-product .was-min {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.was-tag {
+  flex-shrink: 0;
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-top: 2px;
+}
+
+.was-plus .was-tag {
+  background: #e6f6ee;
+  color: #1f9d55;
+}
+
+.was-min .was-tag {
+  background: #fdecea;
+  color: #c0392b;
+}
+
+/* Conclusie-kader */
+.was-conclusie {
+  background: var(--schuim);
+  border: 1px solid var(--scheiding);
+  border-left: 4px solid var(--aqua);
+  border-radius: 0 var(--radius-klein) var(--radius-klein) 0;
+  padding: 14px 16px;
+  margin: 4px 0 16px;
+}
+
+.studentkaart .was-conclusie strong {
+  display: block;
+  color: var(--blauw-900);
+  font-size: 0.9rem;
+  letter-spacing: 0;
+  text-transform: none;
+  margin-bottom: 4px;
+}
+
 /* SWOT-analyse (1.5): kwadranten-grid */
 .swot-grid {
   display: grid;

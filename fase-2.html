@@ -108,7 +108,39 @@
       <p class="kaart-label">Eigen bijdrage</p>
     </div>
   </header>
-  <p>Welke vergelijkbare producten heb jij onderzocht die passen bij jouw deel van het project en welke inzichten leverden die op? <span class="ph">[Vervang deze tekst door je eigen beschrijving]</span></p>
+  <p>Vanuit de machinebouw heb ik gekeken naar bestaande autowasstraten. Hierbij richtte ik me vooral op het mechanische deel: het aantal bewegende delen, de aandrijving en hoe eenvoudig de constructie te bouwen is. De belangrijkste systemen op een rij:</p>
+
+  <div class="was-producten">
+    <div class="was-product">
+      <h6>Wasstraat met ronddraaiende borstels</h6>
+      <p>Ronddraaiende borstels bewegen langs de auto en verwijderen vuil door mechanische wrijving.</p>
+      <p class="was-plus"><span class="was-tag">Plus</span> Reinigt goed: de borstels schrobben het vuil mechanisch van de carrosserie.</p>
+      <p class="was-min"><span class="was-tag">Min</span> Complex en slijtagegevoelig: veel bewegende delen maken de constructie ingewikkeld.</p>
+    </div>
+    <div class="was-product">
+      <h6>Portaalwasstraat</h6>
+      <p>De hele installatie (het portaal) beweegt om de stilstaande auto heen.</p>
+      <p class="was-plus"><span class="was-tag">Plus</span> Compact: geschikt voor &eacute;&eacute;n auto tegelijk en neemt weinig ruimte in.</p>
+      <p class="was-min"><span class="was-tag">Min</span> Traag: doordat het portaal heen en weer beweegt, duurt het wassen relatief lang.</p>
+    </div>
+    <div class="was-product">
+      <h6>Roll-over wasstraat</h6>
+      <p>De auto blijft stilstaan terwijl de wasrobot langs en over de auto rijdt.</p>
+      <p class="was-plus"><span class="was-tag">Plus</span> Makkelijk te automatiseren: aan te sturen met motoren, sensoren en een PLC.</p>
+      <p class="was-min"><span class="was-tag">Min</span> Positionering nodig: de auto moet nauwkeurig op de juiste plek staan.</p>
+    </div>
+    <div class="was-product">
+      <h6>Wasstraat met hogedrukspuiten</h6>
+      <p>Het vuil wordt vooral met hoge waterdruk verwijderd in plaats van met borstels.</p>
+      <p class="was-plus"><span class="was-tag">Plus</span> Weinig mechanische onderdelen: geen borstels, dus minder bewegende delen.</p>
+      <p class="was-min"><span class="was-tag">Min</span> Matig resultaat: verbruikt veel water en verwijdert hardnekkig vuil soms minder goed.</p>
+    </div>
+  </div>
+
+  <div class="was-conclusie">
+    <strong>Conclusie voor machinebouw</strong>
+    <p>Voor ons schaalmodel is de geautomatiseerde roll-over/wasrobot de beste keuze. De stilstaande auto vraagt om een rijdende constructie op rails, die ik mechanisch kan bouwen met profielen en een aandrijving. Omdat alle onderdelen (motor, pompen, spuitkoppen en sensoren) op &eacute;&eacute;n bewegend frame zitten, is het proces eenvoudig te automatiseren met een PLC. De borstelwasstraat valt af door de vele bewegende delen en de hogedrukwasstraat voldoet niet, omdat de opdracht een wasrobot vereist die de auto daadwerkelijk wast.</p>
+  </div>
   <p class="maakletwat">Vervang het vlak hieronder door je eigen afbeelding, een <code>&lt;img&gt;</code> of een downloadlink.</p>
   <div class="media-slot"><p>Bijlage toevoegen &mdash; bijv. <code>assets/merijn/productonderzoek-bijdrage.pdf</code></p></div>
 </article>
