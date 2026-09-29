@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Autowasstraat — Sectorproject | Aqua-washers</title>
   <meta name="description" content="Projectwebsite van groep Aqua-washers: het projectverslag van het sectorproject 'Autowasstraat' aan het Alfa-college.">
+  <meta name="theme-color" content="#f4f9fa">
+  <meta name="color-scheme" content="light dark">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script>
+  try{(function(){var t=localStorage.getItem('aqua-theme');if(!t){t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}document.documentElement.setAttribute('data-theme',t);var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',t==='dark'?'#071722':'#f4f9fa');})();}catch(e){document.documentElement.setAttribute('data-theme','light');}
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#hoofdinhoud">Direct naar inhoud</a>
 
   <!-- ======================== Navigatie ======================== -->
   <header class="site-header">
@@ -20,9 +29,15 @@
         </span>
         <span>Aqua-washers</span>
       </a>
-      <button class="nav-toggle" aria-label="Menu openen" aria-expanded="false" aria-controls="site-nav">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Schakel donker thema in" aria-pressed="false" type="button">
+          <svg class="icon-sun" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="nav-toggle" aria-label="Menu openen" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
       <nav class="site-nav" id="site-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -37,26 +52,25 @@
         </ul>
       </nav>
     </div>
+    <span class="scroll-progress" aria-hidden="true"></span>
   </header>
 
   <!-- ======================== Hero ======================== -->
-  <section class="hero">
-    <div class="bubbles" aria-hidden="true">
-      <span class="zeepbel" style="width:70px;height:70px;left:8%;animation-duration:16s;"></span>
-      <span class="zeepbel" style="width:34px;height:34px;left:22%;animation-duration:12s;animation-delay:2s;"></span>
-      <span class="zeepbel" style="width:90px;height:90px;left:38%;animation-duration:20s;animation-delay:1s;"></span>
-      <span class="zeepbel" style="width:26px;height:26px;left:55%;animation-duration:11s;animation-delay:3s;"></span>
-      <span class="zeepbel" style="width:60px;height:60px;left:68%;animation-duration:17s;"></span>
-      <span class="zeepbel" style="width:40px;height:40px;left:82%;animation-duration:13s;animation-delay:2s;"></span>
-      <span class="zeepbel" style="width:22px;height:22px;left:91%;animation-duration:10s;animation-delay:4s;"></span>
-      <span class="zeepbel" style="width:50px;height:50px;left:48%;animation-duration:15s;animation-delay:5s;"></span>
-    </div>
-    <div class="container">
-      <span class="hero-kicker">Sectorproject</span>
-      <h1>Autowasstraat</h1>
-      <p class="ondertitel">Groep Aqua-washers</p>
-      <p class="lead">Op deze website vind je het volledige projectverslag van ons sectorproject. Fase voor fase leggen we vast wat we hebben gedaan, gemaakt en geregeld — per groepsielid.</p>
-      <div class="hero-badges">
+  <section class="hero" id="hoofdinhoud">
+    <span class="orb orb-a" aria-hidden="true"></span>
+    <span class="orb orb-b" aria-hidden="true"></span>
+    <span class="orb orb-c" aria-hidden="true"></span>
+    <span class="hero-noise" aria-hidden="true"></span>
+    <div class="container hero-inner">
+      <span class="hero-kicker reveal" style="--reveal-delay:0ms">Sectorproject</span>
+      <h1 class="reveal" style="--reveal-delay:80ms">Autowasstraat</h1>
+      <p class="ondertitel reveal" style="--reveal-delay:140ms">Groep Aqua-washers</p>
+      <p class="lead reveal" style="--reveal-delay:200ms">Op deze website vind je het volledige projectverslag van ons sectorproject. Fase voor fase leggen we vast wat we hebben gedaan, gemaakt en geregeld — per groepsielid.</p>
+      <div class="hero-actions reveal" style="--reveal-delay:260ms">
+        <a class="btn btn-primary" href="#fasen">Bekijk de 7 fasen <span class="arr" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="#team">Ontmoet het team</a>
+      </div>
+      <div class="hero-badges reveal" style="--reveal-delay:320ms">
         <span class="hero-badge"><strong>Esmeralda</strong> Melishoek</span>
         <span class="hero-badge"><strong>Daan</strong> Kooistra</span>
         <span class="hero-badge"><strong>Merijn</strong> de Jong</span>
@@ -69,7 +83,7 @@
     <div class="container">
       <h2 class="sectie-titel">Projectgegevens</h2>
       <p class="sectie-lead">De officiële gegevens van dit sectorproject. De gele vlakken zijn plekhouders die we later bijwerken met de definitieve datum en plaats.</p>
-      <ul class="infolijst">
+      <ul class="infolijst reveal">
         <li>
           <span class="label">Titel</span>
           <span class="waarde">Sectorproject <strong>Autowasstraat</strong></span>
@@ -98,15 +112,22 @@
           <span class="label">Docenten / begeleiders</span>
           <span class="waarde">Oscar Admiraal en Jan Brookman</span>
         </li>
+      </ul>
     </div>
   </section>
 
   <!-- ======================== Het project in 7 fasen ======================== -->
-  <section class="sectie" style="background:var(--schuim);">
+  <section class="sectie" id="fasen">
     <div class="container">
-      <h2 class="sectie-titel">Het project in 7 fasen</h2>
-      <p class="sectie-lead">Ons project volgt de zeven projectfasen. Per fase staat elk product van ieder groepsielid apart beschreven en gedocumenteerd.</p>
-      <ol class="tijdlijn">
+      <div class="section-head"><div><h2 class="sectie-titel">Het project in <span class="count">7 fasen</span></h2>
+      <p class="sectie-lead">Ons project volgt de zeven projectfasen. Per fase staat elk product van ieder groepsielid apart beschreven en gedocumenteerd.</p></div></div>
+      <div class="stat-row reveal-child">
+        <div class="stat"><b>7</b><span>Projectfasen</span></div>
+        <div class="stat"><b>3</b><span>Groepsleden</span></div>
+        <div class="stat"><b>30+</b><span>Deelproducten</span></div>
+        <div class="stat"><b>1</b><span>Werkende wasstraat</span></div>
+      </div>
+      <ol class="tijdlijn reveal-child">
         <li>
           <span class="punt">1</span>
           <h3>Oriëntatiefase</h3>
@@ -165,23 +186,26 @@
     <div class="container">
       <h2 class="sectie-titel">De groepsleden</h2>
       <p class="sectie-lead">Ieder lid heeft een eigen pagina waarop al zijn of haar producten per fase terug te vinden zijn.</p>
-      <div class="team-grid">
+      <div class="team-grid reveal-child">
         <div class="team-kaart reveal">
           <span class="avatar esi" aria-hidden="true">E</span>
           <h3>Esmeralda Melishoek</h3>
           <p class="rol">Groepslid Aqua-washers</p>
+          <span class="discipline">WTB · Ontwerp & Documentatie</span><br>
           <a class="kaart-link" href="student-esmeralda.html">Profielpagina</a>
         </div>
         <div class="team-kaart reveal">
           <span class="avatar daan" aria-hidden="true">D</span>
           <h3>Daan Kooistra</h3>
           <p class="rol">Groepslid Aqua-washers</p>
+          <span class="discipline">ELA · Elektro & Automatisering</span><br>
           <a class="kaart-link" href="student-daan.html">Profielpagina</a>
         </div>
         <div class="team-kaart reveal">
           <span class="avatar men" aria-hidden="true">M</span>
           <h3>Merijn de Jong</h3>
           <p class="rol">Groepslid Aqua-washers</p>
+          <span class="discipline">MBW · Machinebouw & Projectleiding</span><br>
           <a class="kaart-link" href="student-merijn.html">Profielpagina</a>
         </div>
       </div>
@@ -193,6 +217,7 @@
     <div class="container">
       <div class="footer-grid">
         <div>
+          <div class="brand-mini"><span class="brand-mark" aria-hidden="true" style="width:32px;height:32px;border-radius:9px;"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8 7 5 11 5 14.5 5 18 8 21 12 21s7-3 7-6.5C19 11 16 7 12 2zm0 16.5c-2.2 0-4-1.6-4-3.7 0-2.2 4-7.4 4-7.4s4 5.2 4 7.4c0 2.1-1.8 3.7-4 3.7z"/></svg></span><span>Aqua-washers</span></div>
           <h4>Project</h4>
           <ul>
             <li>Sectorproject Autowasstraat</li>
@@ -212,9 +237,20 @@
           <h4>Fasen</h4>
           <ul>
             <li><a href="fase-1.html">Fase 1 · Oriëntatie</a></li>
+            <li><a href="fase-2.html">Fase 2 · Definitie</a></li>
             <li><a href="fase-3.html">Fase 3 · Ontwerp</a></li>
+            <li><a href="fase-4.html">Fase 4 · Voorbereiding</a></li>
             <li><a href="fase-5.html">Fase 5 · Realisatie</a></li>
+            <li><a href="fase-6.html">Fase 6 · Oplevering</a></li>
             <li><a href="fase-7.html">Fase 7 · Nazorg</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Begeleiding</h4>
+          <ul>
+            <li>Oscar Admiraal</li>
+            <li>Jan Brookman</li>
+            <li>Alfa-college</li>
           </ul>
         </div>
       </div>
@@ -222,6 +258,9 @@
     </div>
   </footer>
 
+  <button class="back-to-top" aria-label="Terug naar boven" type="button">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
   <script src="js/main.js"></script>
 </body>
 </html>
