@@ -114,6 +114,19 @@
           "groepsBijlage": "strokenplanning.pdf",
           "studentVraag": "Laat jouw deel van de planning zien: wanneer begin en eindig jij met de activiteiten waar jij verantwoordelijk voor bent?",
           "bijlage": "planning-bijdrage.pdf"
+        },
+        {
+          "id": "2-4",
+          "nummer": "2.4",
+          "titel": "Doelgroeponderzoek",
+          "kort": "Doelgroeponderzoek",
+          "type": "groep",
+          "wat": "Onderzoek naar de doelgroep: wie de gebruikers van de autowasstraat zijn en wat zij belangrijk vinden, vertaald naar eisen voor het ontwerp. Apart per teamlid uitgewerkt.",
+          "groepsTitel": "Doelgroeponderzoek",
+          "groepsVraag": "Beschrijf wie de gebruikers van de autowasstraat zijn en wat zij belangrijk vinden. Laad het gezamenlijke doelgroeponderzoek op.",
+          "groepsBijlage": "doelgroeponderzoek.pdf",
+          "studentVraag": "Wat betekent het doelgroeponderzoek voor jouw deel van het project: wat vindt de doelgroep belangrijk aan jouw onderdeel en welke eisen neem jij mee in je ontwerp?",
+          "bijlage": "doelgroep-bijdrage.pdf"
         }
       ]
     },
